@@ -11,7 +11,6 @@ Vanilla javascript
 ## installation: </br>
 
 - install dependences</br>
-- rename dist folder to src</br>
 - run web-dev-server with npm </br>
 - run json-server with npm</br>
 

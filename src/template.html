@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MicroPosts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="deep-purple accent-1">
+    <nav>
+      <div class="nav-wrapper deep-purple lighten-1">
+        <a href="#" class="brand-logo center">Micro Posts</a>
+      </div>
+    </nav>
+    <div class="container mrg">
+      <div class="card deep-purple lighten-1">
+        <div class="card-content white-text">
+          <span class="card-title">Say Something</span>
+          <p>What's on your mind?</p>
+          <div class="input-field col s6">
+            <input
+              id="title"
+              type="text"
+              class="validate"
+              placeholder="Poste title"
+            />
+          </div>
+          <div class="input-field col s12">
+            <textarea
+              id="body"
+              class="materialize-textarea white-text"
+              placeholder="Poste body"
+            ></textarea>
+            <input type="hidden" id="id" value="" />
+            <a
+              id="post-submit"
+              class="deep-purple accent-1 btn-small deep-purple-text text-darken-2"
+              >Submit Post</a
+            >
+            <span class="form-end"></span>
+            <!--to insert the cancel button before it -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="posts"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
